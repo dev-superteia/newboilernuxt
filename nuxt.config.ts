@@ -5,6 +5,8 @@ export default defineNuxtConfig({
   modules: [
     // Simple usage
     '@nuxtjs/eslint-module',
+    '@nuxtjs/tailwindcss',
+    'nuxt-primevue',
     // With options
     ['@nuxtjs/eslint-module', { /* module options */ }]
   ],
@@ -17,5 +19,5 @@ export default defineNuxtConfig({
       autoprefixer: {}
     }
   },
-  css: ['~/assets/css/tailwind.css']
+  css: ['primevue/resources/themes/tailwind-light/theme.css', '~/assets/css/tailwind.css']
 })
